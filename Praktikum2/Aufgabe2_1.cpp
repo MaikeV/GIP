@@ -7,7 +7,7 @@ int main() {
 	std::cout << "Bitte einen Buchstaben eingeben: ";
 	std::cin >> input;
 
-	int result = int(input) % position + 1;
+	int result = int(input) - 'a' + 1;
 
 	std::cout << "Der Buchstabe " << input << " hat die Postition " << result << " im Alphabet." << std::endl;
 	std::system("PAUSE");

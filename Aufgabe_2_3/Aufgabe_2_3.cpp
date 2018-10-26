@@ -16,9 +16,9 @@ int main() {
 
 	std::cout << "Auf den dritten Kandidaten sind somit " << candidate3 << " Stimmen entfallen." << std::endl;
 
-	double c1_per = (candidate1 / total);
-	double c2_per = (candidate2 / total);
-	double c3_per = (candidate3 / total);
+	double c1_per = double(candidate1 / total);
+	double c2_per = double(candidate2 / total);
+	double c3_per = double(candidate3 / total);
 
 	std::cout << "Kandidat 1 erhielt " << c1_per << " % der Stimmen." << std::endl;
 	std::cout << "Kandidat 2 erhielt " << c2_per << " % der Stimmen." << std::endl;
