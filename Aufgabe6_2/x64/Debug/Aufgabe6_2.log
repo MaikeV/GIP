@@ -1,3 +1,3 @@
-﻿  Aufgabe6_2.cpp
-c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe6_2\aufgabe6_2.cpp(17): warning C4018: "<=": Konflikt zwischen "signed" und "unsigned"
+﻿  Wortspiegel.cpp
+c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe6_2\wortspiegel.cpp(15): warning C4267: "=": Konvertierung von "size_t" nach "int", Datenverlust möglich
   Aufgabe6_2.vcxproj -> C:\Users\Maike\Documents\Studium\GIP\Development\Projekte\GIP_2018_2019\GIP\x64\Debug\Aufgabe6_2.exe

@@ -31,7 +31,7 @@ void wortspiegel(std::string &text, int pos) {
 	int length = (last - first) + 1;
 	int swapper = length / 2;
 
-	if (length % 2 == 0) {
+	if (length % 2 != 0) {
 		for (int index = first; index <= first + swapper; index++) {
 			temp = text.at(index);
 			text.at(index) = text.at(last - counter);
