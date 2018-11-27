@@ -38,7 +38,7 @@ int main()
 			moveRight = false;
 		} else if (moveRight == false && x > left_border) {
 			x -= delta;
-		} else if (moveRight == false && x <= left_border){
+		} else if (moveRight == false && x <= left_border) {
 			moveRight = true;
 		} 
 		
