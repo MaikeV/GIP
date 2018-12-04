@@ -2,7 +2,7 @@
 
 int main() {
 	int input = 0;
-	int inpArr[9];
+	int inpArr[5];
 
 	for (int index = 1; index <= 5; index++) {
 		do {
