@@ -13,8 +13,6 @@ int main() {
 		std::getline(std::cin, eingabe[index]);
 	}
 
-	std::cout << std::endl << "Das Sudoku lautet: " << std::endl;
-
 	for (int line = 0; line <= 10; line++) {
 		for (int column = 0; column <= eingabe[line].length() - 1; column++) {
 			if (eingabe[line].at(column) != '-' && eingabe[line].at(column) != '.' && eingabe[line].at(column) != '|') {
@@ -24,31 +22,13 @@ int main() {
 				lineIndex--;
 				break;
 			}
-			
-			/*if (eingabe[line].at(column) == '-') {
-				std::cout << "=";
-			} else if (eingabe[line].at(column) == '.') {
-				std::cout << ";";
-			} else if (eingabe[line].at(column) == '|') {
-				std::cout << "//";
-			} else {
-				sudoku[line][column] = eingabe[line].at(column) - '0';
-				std::cout << sudoku[line][column];
-			}
-
-			if (column == eingabe[line].length() - 1) {
-				std::cout << std::endl;
-			}*/
-
-
 		}
 
 		columnIndex = 0;
 		lineIndex++;
 	}
 
-	lineIndex = 0;
-	columnIndex = 0;
+	std::cout << std::endl << "Das Sudoku lautet: " << std::endl;
 
 	for (int line = 0; line < 9; line++) {
 		for (int column = 0; column < 9; column++) {
@@ -66,7 +46,6 @@ int main() {
 		if (line == 2 || line == 5) {
 			std::cout << "=======//=======//=======" << std::endl;
 		}
-
 	}
 
 	std::system("PAUSE");
