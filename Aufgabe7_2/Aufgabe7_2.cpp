@@ -49,7 +49,7 @@ int main() {
 		}
 		
 		html = html.append(htmlLine);
-		std::cout << html;
+		std::cout << html; 
 	}
 
 	htmlTemp.close();
