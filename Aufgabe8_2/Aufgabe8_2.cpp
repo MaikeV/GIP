@@ -1,28 +1,6 @@
 #include <iostream>
 #include <string>
 
-void checkSudoku2(int sudokuPart[9], int indexNum, std::string category, bool &isCorrect) {
-	int multiple = 0;
-	int arrayLength = 9;
-
-	for (int index = 0; index < 8; index++) {
-		int missing = 0;
-
-		for (int innerIndex = index + 1; innerIndex <= 8; innerIndex++) {
-			//std::cout << sudokuPart[index] << "--" << sudokuPart[innerIndex] << std::endl;
-			if (sudokuPart[index] == sudokuPart[innerIndex]) {
-				multiple = sudokuPart[index];
-				std::cout << category << " " << indexNum << ": Zahl " << multiple << " kommt mehrfach vor." << std::endl;
-				isCorrect = false;
-			}
-		}
-
-		if (missing != 0) {
-			std::cout << category << " " << indexNum << ": Zahl " << sudokuPart[index] << " kommt nicht vor." << std::endl;
-		}
-	}
-}
-
 int bubbleSort(int sudokuPart[9]) {
 	int tmp = 0;
 	bool swapped;
@@ -49,13 +27,14 @@ void checkSudoku(int sudokuPart[9], int indexNum, std::string category, bool &is
 	int multiple;
 
 	*sudokuPart = bubbleSort(sudokuPart);
+
 	if (sudokuPart[0] != 1) {
 		std::cout << category << " " << indexNum << ": Zahl " << 1 << " kommt nicht vor." << std::endl;
+		isCorrect = false;
 	}
 
 	for (int index = 0; index < 9; index++) {
 		int diff = sudokuPart[index + 1] - sudokuPart[index];
-		
 		
 		if (diff > 1) {
 			for (int pos = 1; pos < diff; pos++) {
@@ -71,6 +50,7 @@ void checkSudoku(int sudokuPart[9], int indexNum, std::string category, bool &is
 
 	if (sudokuPart[8] != 9) {
 		std::cout << category << " " << indexNum << ": Zahl " << 9 << " kommt nicht vor." << std::endl;
+		isCorrect = false;
 	}
 }
 
