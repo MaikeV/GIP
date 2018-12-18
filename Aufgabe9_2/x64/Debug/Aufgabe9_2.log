@@ -1,0 +1,16 @@
+﻿  Aufgabe9_2.cpp
+c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.15.26726\include\algorithm(2583): warning C4244: "Argument": Konvertierung von "_Diff" in "int", möglicher Datenverlust
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.15.26726\include\algorithm(2607): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Funktions-Vorlage "void std::_Random_shuffle1<_RanIt,Catch::RandomNumberGenerator>(_RanIt,_RanIt,_RngFn &)".
+          with
+          [
+              _RanIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Catch::TestCase>>>,
+              _RngFn=Catch::RandomNumberGenerator
+          ]
+  c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe9_2\catch.h(6201): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Funktions-Vorlage "void std::random_shuffle<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,Catch::RandomNumberGenerator&>(_RanIt,_RanIt,_RngFn)".
+          with
+          [
+              _Ty=Catch::TestCase,
+              _RanIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Catch::TestCase>>>,
+              _RngFn=Catch::RandomNumberGenerator &
+          ]
+  Aufgabe9_2.vcxproj -> C:\Users\Maike\Documents\Studium\GIP\Development\Projekte\GIP_2018_2019\GIP\x64\Debug\Aufgabe9_2.exe
