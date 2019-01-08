@@ -8,8 +8,8 @@ namespace binaryTree {
 		Knot *rightChild;
 	};
 
-	void searchPos(int number, Knot *childKnot, Knot *prev);
-	void add(int number, Knot *&anker);
+	void add(int number, Knot *childKnot, Knot *prev, Knot *&anker);
+	//void add(int number, Knot *&anker);
 	void print(Knot *&anker);
 	void printKnot(Knot *&knot, int depth);
 }

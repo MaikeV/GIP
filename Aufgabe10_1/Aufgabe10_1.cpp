@@ -13,7 +13,7 @@ int main() {
 		std::cin >> input;
 
 		if (input != 99) {
-			binaryTree::add(input, anker);
+			binaryTree::add(input, anker, nullptr, anker);
 		}
 		
 	} while (input != 99);
