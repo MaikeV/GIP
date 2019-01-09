@@ -38,18 +38,23 @@ void linie(int x1, int y1, int x2, int y2, char canvas[][canvas_size]) {
 		diffY = diffY * (-1);
 	}
 
-	if (diffX == 0 
-		(x1, y1) und(x2, y2) sind benachbart) {
-		Zeichne die Punkte(x1, y1) und(x2, y2)
+	if ((diffX == 0 && diffY == 1) || (diffY == 0 && diffX == 1) || (diffX == 1 && diffY == 1)) { //(x1, y1) und(x2, y2) sind benachbart) {
+		//Zeichne die Punkte(x1, y1) und(x2, y2)
+		canvas[x1][y1] = filled_pixel;
+		canvas[x2][y2] = filled_pixel;
+
 	} else {
 		// Berechne die ganzzahligen Koordinaten des
 		// Punktes in der Mitte zwischen den beiden
 		// Ausgangspunkten:
 		int x_mitte = (x1 + x2) / 2;
 		int y_mitte = (y1 + y2) / 2;
+
 		// Rekursive Aufrufe:
-		1. Linie vom ersten Punkt bis zur Mitte
-			2. Linie von der Mitte bis zum zweiten Punkt
+		//1. Linie vom ersten Punkt bis zur Mitte
+		linie(x1, y1, x_mitte, y_mitte, canvas);
+		//2. Linie von der Mitte bis zum zweiten Punkt
+		linie(x_mitte, y_mitte, x2, y2, canvas);
 	}
 }
 
