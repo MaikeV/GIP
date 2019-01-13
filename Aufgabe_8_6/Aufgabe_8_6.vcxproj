@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{40B93570-8F9E-455A-833D-3CD43D2295AE}</ProjectGuid>
-    <RootNamespace>Aufgabe81</RootNamespace>
+    <ProjectGuid>{9766FB10-77A8-4041-8E66-E11C4B24DB12}</ProjectGuid>
+    <RootNamespace>Aufgabe86</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,7 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Aufgabe_8_1.cpp" />
+    <ClCompile Include="Aufgabe_8_6.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
