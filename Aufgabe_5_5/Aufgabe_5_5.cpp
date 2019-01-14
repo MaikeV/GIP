@@ -10,7 +10,7 @@ int main() {
 	for (int index = 0; index <= 8; index++) {
 		isNew = true;
 		do {
-			std::cout << "Bitte geben Sie die " << index + 1 << ". Zahl ein: ";
+			std::cout << "Bitte geben Sie die " << index + 1 << ". Zahl ein: ? ";
 			std::cin >> input;
 		} while (input < 1 || input >= 7);
 

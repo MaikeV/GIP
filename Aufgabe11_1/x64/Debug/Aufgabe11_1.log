@@ -1,0 +1,4 @@
+﻿  main.cpp
+  MyRectangle.cpp
+c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe11_1\myrectangle.h(12): error C3490: "x1" kann nicht geändert werden, da über ein Konstantenobjekt darauf zugegriffen wird.
+  Code wird generiert...

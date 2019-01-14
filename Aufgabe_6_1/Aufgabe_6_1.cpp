@@ -30,7 +30,7 @@ int main() {
 	char character;
 	std::string input, firstPart, secondPart;
 
-	std::cout << "Bitte geben Sie die einzeilige Zeichenkette ein : ? ";
+	std::cout << "Bitte geben Sie die einzeilige Zeichenkette ein: ? ";
 	std::getline(std::cin, input);
 	std::cout << "Bitte geben Sie das Zeichen ein: ? ";
 	std::cin >> character;
@@ -38,7 +38,7 @@ int main() {
 	spalte_ab_erstem(character, input, firstPart, secondPart);
 
 	std::cout << "Der erste Teil der Zeichenkette lautet: " << firstPart << std::endl;
-	std::cout << "Der zweite Teil der Zeichenkette lautet : " << secondPart << std::endl; // Leerzeichen ueberpruefen!
+	std::cout << "Der zweite Teil der Zeichenkette lautet: " << secondPart << std::endl; // Leerzeichen ueberpruefen!
 
 	std::system("PAUSE");
 	return 0;

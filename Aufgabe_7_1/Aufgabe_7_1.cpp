@@ -23,7 +23,7 @@ int main() {
 		for (int counter = 0; counter <= index; counter++) {
 			if (input[counter] != "") {
 				while (input[counter].length() < length) {
-					input[counter] = "+" + input[counter];
+					input[counter] = "#" + input[counter];
 				}
 
 				std::cout << input[counter] << std::endl;
