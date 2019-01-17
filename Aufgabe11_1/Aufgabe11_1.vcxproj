@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CImgGIP05.h" />
     <ClInclude Include="MyRectangle.h" />
   </ItemGroup>
   <ItemGroup>

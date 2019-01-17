@@ -18,6 +18,9 @@
     <ClInclude Include="MyRectangle.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="CImgGIP05.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyRectangle.cpp">
