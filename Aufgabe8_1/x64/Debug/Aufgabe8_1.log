@@ -1,13 +1,1 @@
-﻿  Aufgabe8_1.cpp
-c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe8_1\cimggip05.h(48994): warning C4838: Konvertierung von "int" zu "unsigned char" erfordert eine einschränkende Konvertierung
-c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe8_1\aufgabe8_1.cpp(41): warning C4018: ">=": Konflikt zwischen "signed" und "unsigned"
-c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe8_1\cimggip05.h(13297): warning C4319: "~": Null erweitert "unsigned long" zu größerem "double"
-  c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe8_1\cimggip05.h(13296): note: Bei der Kompilierung von Klasse Vorlage der double cimg_library::CImg<float>::_cimg_math_parser::mp_bitwise_not(cimg_library::CImg<float>::_cimg_math_parser &)-Memberfunktion
-  c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe8_1\cimggip05.h(12991): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Funktions-Vorlage "double cimg_library::CImg<float>::_cimg_math_parser::mp_bitwise_not(cimg_library::CImg<float>::_cimg_math_parser &)".
-  c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe8_1\cimggip05.h(15035): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "cimg_library::CImg<float>::_cimg_math_parser", die kompiliert wird.
-  c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe8_1\cimggip05.h(15026): note: Bei der Kompilierung von Klasse Vorlage der double cimg_library::CImg<float>::eval(const char *const ,const double,const double,const double,const double) const-Memberfunktion
-  c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe8_1\cimggip05.h(48885): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Funktions-Vorlage "double cimg_library::CImg<float>::eval(const char *const ,const double,const double,const double,const double) const".
-  c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe8_1\cimggip05.h(26426): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "cimg_library::CImg<float>", die kompiliert wird.
-  c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe8_1\cimggip05.h(43217): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "cimg_library::CImg<unsigned long>", die kompiliert wird.
-  c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe8_1\cimggip05.h(43217): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "cimg_library::CImg<T>", die kompiliert wird.
-  Aufgabe8_1.vcxproj -> C:\Users\Maike\Documents\Studium\GIP\Development\Projekte\GIP_2018_2019\GIP\x64\Debug\Aufgabe8_1.exe
+﻿
