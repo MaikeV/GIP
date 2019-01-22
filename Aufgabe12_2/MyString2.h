@@ -7,7 +7,7 @@ class MyString2 {
 	friend void friend_delete_internal(MyString2& s);
 	friend CharListenKnoten* friend_deep_copy_internal(MyString2& s);
 private:
-	CharListenKnoten *anker;
+	CharListenKnoten *anker = nullptr;
 
 	void append_internal(char p_data);
 	void delete_internal();
@@ -25,8 +25,9 @@ public:
 	}
 
 	MyString2(const MyString2& sourceString) { // Copy-Konstruktor
+	
 		CharListenKnoten* ptr = sourceString.get_anker();
-		while (ptr) {
+		while (ptr != nullptr) {
 			append_internal(ptr->get_data());
 			ptr = ptr->get_next();
 		}
@@ -49,6 +50,6 @@ public:
 	// functions
 	unsigned int length();
 	char at(unsigned int pos);
-	MyString2 operator +(char c);
+	MyString2 operator +(char c) const;
 	std::string to_string();
 };

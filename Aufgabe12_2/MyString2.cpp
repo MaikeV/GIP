@@ -4,14 +4,12 @@ MyString2& MyString2::operator =(const MyString2 &orig) {
 	delete_internal();
 
 	CharListenKnoten *ptr = orig.get_anker();
-	MyString2 *str = new MyString2{ ptr };
-
-	while (ptr->get_next() != nullptr) {
-		str->append_internal(ptr->get_data());
-		//CharListenKnoten *newEntry = new CharListenKnoten{ ptr->get_data(), ptr->get_next() };
+	
+	while (ptr != nullptr) {
+		append_internal(ptr->get_data());
 		ptr = ptr->get_next();
 	}
-
+	
 	return *this;
 }
 
@@ -49,27 +47,21 @@ void MyString2::delete_internal() {
 }
 
 CharListenKnoten* MyString2::deep_copy_internal() const {
-
-
-
-	if (this->anker != nullptr) {
-		CharListenKnoten *ptr = this->anker;
-
-		CharListenKnoten *newAnker = new CharListenKnoten{ ptr->get_data(), ptr->get_next() };
-
-		if (ptr->get_next() != nullptr) {
-			ptr = ptr->get_next();
-		}
-
-		while (ptr->get_next() != nullptr) {
-			CharListenKnoten *newEntry = new CharListenKnoten{ ptr->get_data(), ptr->get_next() };
-			ptr = ptr->get_next();
-		}
-
-		return newAnker;
+	if (this->anker == nullptr) {
+		return nullptr;
 	}
 
-	return this->anker;
+	CharListenKnoten *ptr = this->anker;
+	MyString2 *str = new MyString2();
+
+	while (ptr->get_next() != nullptr) {
+		str->append_internal(ptr->get_data());
+		ptr = ptr->get_next();
+	}
+
+	str->append_internal(ptr->get_data());
+
+	return str->get_anker();
 }
 
 unsigned int MyString2::length() {
@@ -77,7 +69,7 @@ unsigned int MyString2::length() {
 
 	unsigned int length = 0;
 
-	while (ptr->get_next() != nullptr) {
+	while (ptr != nullptr) {
 		length++;
 		ptr = ptr->get_next();
 	}
@@ -96,16 +88,14 @@ char MyString2::at(unsigned int pos) {
 		ptr = ptr->get_next();
 	}
 
-	return ptr->get_data();
+	return ptr ? ptr->get_data() : '\0';
 }
 
-MyString2 MyString2::operator +(char c) {
-	CharListenKnoten *ptr = anker;
-	MyString2 *str = new MyString2{ptr};
-	
-	str->append_internal(c);
+MyString2 MyString2::operator +(char c) const {
+	MyString2 str = MyString2{*this};
+	str.append_internal(c);
 
-	return *str;
+	return str;
 }
 
 std::string MyString2::to_string() {
@@ -113,7 +103,7 @@ std::string MyString2::to_string() {
 	int length = this->length();
 	std::string str;
 
-	while (ptr->get_next() != nullptr) {
+	while (ptr != nullptr) {
 		str += ptr->get_data();
 		ptr = ptr->get_next();
 	}

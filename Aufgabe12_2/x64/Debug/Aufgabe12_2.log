@@ -14,7 +14,7 @@ c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.
               _RngFn=Catch::RandomNumberGenerator &
           ]
   MyString2.cpp
-c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe12_2\mystring2.cpp(95): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\maike\documents\studium\gip\development\projekte\gip_2018_2019\gip\aufgabe12_2\mystring2.cpp(87): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
   mystring2_unit_tests.cpp
   Code wird generiert...
   Aufgabe12_2.vcxproj -> C:\Users\Maike\Documents\Studium\GIP\Development\Projekte\GIP_2018_2019\GIP\x64\Debug\Aufgabe12_2.exe
