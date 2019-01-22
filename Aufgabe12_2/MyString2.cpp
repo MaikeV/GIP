@@ -30,7 +30,7 @@ void MyString2::append_internal(char p_data) {
 		ptr = ptr->get_next();
 	}
 
-	ptr->set_data(newEntry->get_data());
+	ptr->set_next(newEntry);
 }
 
 void MyString2::delete_internal() {
@@ -49,17 +49,27 @@ void MyString2::delete_internal() {
 }
 
 CharListenKnoten* MyString2::deep_copy_internal() const {
-	CharListenKnoten *ptr = this->anker;
 
-	CharListenKnoten *newAnker = new CharListenKnoten{ ptr->get_data(), ptr->get_next() };
-	ptr = ptr->get_next();
-	
-	while (ptr->get_next() != nullptr) {
-		CharListenKnoten *newEntry = new CharListenKnoten{ ptr->get_data(), ptr->get_next() };
-		ptr = ptr->get_next();
+
+
+	if (this->anker != nullptr) {
+		CharListenKnoten *ptr = this->anker;
+
+		CharListenKnoten *newAnker = new CharListenKnoten{ ptr->get_data(), ptr->get_next() };
+
+		if (ptr->get_next() != nullptr) {
+			ptr = ptr->get_next();
+		}
+
+		while (ptr->get_next() != nullptr) {
+			CharListenKnoten *newEntry = new CharListenKnoten{ ptr->get_data(), ptr->get_next() };
+			ptr = ptr->get_next();
+		}
+
+		return newAnker;
 	}
 
-	return nullptr;
+	return this->anker;
 }
 
 unsigned int MyString2::length() {

@@ -19,13 +19,17 @@ public:
 	}
 
 	MyString2(std::string str) { // Konstruktor aus std::string
-		for (int index = 0; index <= str.length() - 1; index++) {
+		for (int index = 0; index < str.length(); index++) {
 			append_internal(str.at(index));
 		}
 	}
 
 	MyString2(const MyString2& sourceString) { // Copy-Konstruktor
-		deep_copy_internal();
+		CharListenKnoten* ptr = sourceString.get_anker();
+		while (ptr) {
+			append_internal(ptr->get_data());
+			ptr = ptr->get_next();
+		}
 	}
 
 	~MyString2() { // Destruktor
