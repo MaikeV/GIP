@@ -3,10 +3,11 @@
 
 void MyFilledRectangle::draw() {
 	int height = this->get_y2() - this->get_y1();
+	int width = this->get_x2() - this->get_x1();
 
 	MyRectangle::draw();
 
-	if (height > 4) {
+	if (height > 4 && width > 4) {
 		for (int index = 2; index < (height - 2); index += 2) {
 			int x1 = this->get_x1() + 2;
 			int y1 = this->get_y1() + index;
